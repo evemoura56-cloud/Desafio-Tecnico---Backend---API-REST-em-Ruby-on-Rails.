@@ -137,24 +137,38 @@ Cobertura: 30 testes, 0 falhas, 1 pending
 
 app/
 ├── controllers/
-│   └── carts_controller.rb
+│ └── carts_controller.rb
 ├── models/
-│   ├── cart.rb
-│   ├── cart_item.rb
-│   └── product.rb
+│ ├── cart.rb
+│ ├── cart_item.rb
+│ └── product.rb
 └── sidekiq/
-    └── mark_cart_as_abandoned_job.rb
+└── mark_cart_as_abandoned_job.rb
 
 config/
 ├── initializers/
-│   └── sidekiq.rb
+│ └── sidekiq.rb
 └── schedule.yml
+
+docs/
+└── screenshots/
+├── screenshot-1-produtos.png
+├── screenshot-2-criar-carrinho.png
+├── screenshot-3-ver-carrinho.png
+└── screenshot-4-adicionar-item.png
 
 spec/
 ├── factories/
+│ ├── carts.rb
+│ ├── cart_items.rb
+│ └── products.rb
 ├── models/
+│ ├── cart_spec.rb
+│ └── product_spec.rb
 ├── requests/
+│ └── carts_spec.rb
 └── sidekiq/
+└── mark_cart_as_abandoned_job_spec.rb
 
 ## Validações
 
