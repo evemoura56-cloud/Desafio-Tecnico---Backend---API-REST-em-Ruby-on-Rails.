@@ -104,6 +104,20 @@ Content-Type: application/json
 
 DELETE /cart/:product_id
 
+## 📸 Screenshots da API
+
+### 1. Listar Produtos Disponíveis
+![Listar Produtos](docs/screenshots/screenshot-1-produtos.png)
+
+### 2. Criar Carrinho e Adicionar Produto
+![Criar Carrinho](docs/screenshots/screenshot-2-criar-carrinho.png)
+
+### 3. Visualizar Carrinho Atual
+![Ver Carrinho](docs/screenshots/screenshot-3-ver-carrinho.png)
+
+### 4. Adicionar Mais Itens ao Carrinho
+![Adicionar Item](docs/screenshots/screenshot-4-adicionar-item.png)
+
 ## Job de Carrinhos Abandonados
 
 O sistema possui um job Sidekiq que executa a cada hora:
