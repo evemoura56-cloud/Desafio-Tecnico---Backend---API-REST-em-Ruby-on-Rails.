@@ -1,0 +1,15 @@
+:concurrency: 3
+:timeout: 60
+:verbose: true
+:queues:
+  - critical
+  - default
+  - mailers
+  - active_storage_analysis
+  - active_storage_purge
+
+:schedule:
+  mark_carts_as_abandoned:
+    cron: "*/15 * * * *" # a cada 15 minutos
+    class: "MarkCartAsAbandonedJob"
+    queue: default
